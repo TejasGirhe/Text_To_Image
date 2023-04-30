@@ -1,7 +1,5 @@
 from fastapi import FastAPI
-import os
 from fastapi.responses import FileResponse
-from PIL import ImageTk
 import torch
 from torch import autocast
 from diffusers import StableDiffusionPipeline
