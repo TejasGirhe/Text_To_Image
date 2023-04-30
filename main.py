@@ -22,7 +22,7 @@ from diffusers import StableDiffusionPipeline
 
 auth_token = "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"
 modelid = "CompVis/stable-diffusion-v1-4"
-device = "cpu"
+device = "cuda"
 pipe = StableDiffusionPipeline.from_pretrained(modelid, revision="fp16", torch_dtype=torch.float16, use_auth_token=auth_token) 
 pipe.to(device) 
 
